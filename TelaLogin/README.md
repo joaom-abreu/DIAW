@@ -15,9 +15,12 @@
 - `GET /login`
     - Retorna a página HTML de login
 
+  ![Tela de Login](./assets/login.png)
+
 - `GET /register`
     - Retorna a página HTML de cadastro
 
+  ![Tela de Cadastro](./assets/register.png)
 ---
 
 ### Como Executar a Aplicação
