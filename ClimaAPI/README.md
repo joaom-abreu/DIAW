@@ -3,8 +3,9 @@
 ### Dependências Utilizadas
 
 - Java 25
-- Spring Boot
 - Maven
+- Spring Boot
+- Spring Web
 - Open-Meteo API
 
 ---
