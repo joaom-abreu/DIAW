@@ -35,7 +35,7 @@
 1. Clonar o repositório e entrar na pasta do projeto:
    ```bash
    git clone https://github.com/joaom-abreu/DIAW
-   cd ClimaAPI/ClimaAPI
+   cd ATIVIDADES/ClimaAPI/ClimaAPI
 
 2. Compilar e executar:
    ```bash

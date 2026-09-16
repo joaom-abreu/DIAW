@@ -7,7 +7,7 @@
 
 ---
 
-- **[Atividade 01](./ClimaAPI):** API REST de Clima com Spring Boot  
+- **[Atividade 01](./ATIVIDADES/ClimaAPI):** API REST de Clima com Spring Boot  
   *Autores: [Álvaro Barbosa Ferreira Silva](https://github.com/Alvarodocxp) e [João Mário Paes de Abreu](https://github.com/joaom-abreu)*
-- **[Atividade 02](./TelaLogin):** Tela de Login com Spring Boot + Thymeleaf  
+- **[Atividade 02](./ATIVIDADES/TelaLogin):** Tela de Login com Spring Boot + Thymeleaf  
   *Autor: [João Mário Paes de Abreu](https://github.com/joaom-abreu)*
