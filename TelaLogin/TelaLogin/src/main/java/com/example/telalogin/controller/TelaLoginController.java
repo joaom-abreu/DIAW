@@ -16,7 +16,4 @@ public class TelaLoginController {
         return "register";
     }
 
-    @GetMapping("/recover")
-    public String recover() {return "recoverpassword";}
-
 }

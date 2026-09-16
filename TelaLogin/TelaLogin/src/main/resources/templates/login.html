@@ -10,11 +10,9 @@
 
 <body>
 <div class="login-container">
-    <div class="login-image-logo-container">
-        <img th:src="@{/images/apc-login-bg.png}" alt="Logo PUC Minas">
-    </div>
     <div class="login-form">
         <form th:action="@{/login}" method="post" class="login-form">
+            <img th:src="@{/images/escudo.png}" alt="Escudo" class="login-shield">
             <h4 class="login-title">Login</h4>
             <input type="text" id="username" name="username" placeholder="Username" required>
             <input type="password" id="password" name="password" placeholder="Senha" required>
@@ -24,7 +22,7 @@
             <p class="login-redirect-options">
                 Ainda não tem cadastro? <br>
                 <a href="/register">Cadastre-se</a> |
-                <a href="/recoverpassword">Esqueceu sua senha?</a>
+                <a href="#">Esqueceu sua senha?</a>
             </p>
         </form>
     </div>
