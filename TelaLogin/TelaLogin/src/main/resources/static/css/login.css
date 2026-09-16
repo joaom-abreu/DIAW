@@ -100,3 +100,10 @@ body, html {
     color: #000000;
     margin-left: 5px;
 }
+@media (max-width: 600px) {
+    body, html {
+        justify-content: center;
+        padding-left: 0;
+        padding: 1rem;
+    }
+}
