@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" th:href="@{/css/register.css}">
 </head>
 <body>
 <div class="register-container">
-    <div class="register-image-logo-container">
-        <img th:src="@{/images/apc-login-bg.png}" alt="Logo PUC Minas">
-    </div>
-
     <div class="register-form">
-        <h2 class="register-title">Crie sua conta</h2>
+        <img th:src="@{/images/escudo.png}" alt="Escudo" class="register-shield">
+        <h4 class="register-title">Registro</h4>
 
         <form th:action="@{/register}" method="post">
             <input type="text" name="nome" placeholder="Nome completo" required>
@@ -28,7 +27,7 @@
         </form>
 
         <div class="register-redirect-options">
-            Já possui conta? <a th:href="@{/login}">Faça login</a>
+            Já tem uma conta? <a th:href="@{/login}">Faça login</a>
         </div>
     </div>
 </div>
