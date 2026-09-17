@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - PUC Minas</title>
+    <link rel="stylesheet" th:href="@{/css/register.css}">
+</head>
+
+<body>
+
+<div class="register-container">
+    <div class="register-form">
+        <form th:action="@{/register}" method="post" class="register-form-content">
+            <img th:src="@{/images/escudo.png}" alt="Escudo" class="register-shield">
+            <h4 class="register-title">Crie sua conta</h4>
+
+            <input type="text" name="nome" placeholder="Nome completo" autocomplete="name" required>
+
+            <input type="email" name="email" placeholder="E-mail" autocomplete="email" required>
+
+            <input type="text" name="cpf" placeholder="CPF" required>
+
+            <input type="text" name="rg" placeholder="RG" required>
+
+            <input type="text" name="endereco" placeholder="Endereço" autocomplete="street-address" required>
+
+            <input type="text" name="instituicao" placeholder="Instituição" required>
+
+            <input type="password" name="senha" placeholder="Senha" autocomplete="new-password" required>
+
+            <div class="register-button-container">
+                <button type="submit">Registrar</button>
+            </div>
+
+            <p class="register-redirect-options">
+                Já possui conta?
+                <a th:href="@{/login}">Faça login</a>
+            </p>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

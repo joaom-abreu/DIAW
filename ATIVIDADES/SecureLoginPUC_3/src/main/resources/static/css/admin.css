@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 8vw;
+    background: url('/images/fundo.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.admin-container {
+    display: flex;
+    width: 360px;
+    height: auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(252, 254, 255, 0.95);
+}
+
+.admin-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.admin-shield {
+    width: 90px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.admin-title {
+    color: #000;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 0.75rem;
+}
+
+.admin-message {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.admin-description {
+    color: #333;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.admin-form {
+    width: 100%;
+}
+
+.admin-button-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.admin-button-container button {
+    width: 100%;
+    height: 5vh;
+    min-height: 40px;
+    padding: 0.75rem;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    body, html {
+        justify-content: center;
+        padding-left: 0;
+        padding: 1rem;
+    }
+}

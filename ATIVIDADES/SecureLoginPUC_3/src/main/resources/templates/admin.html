@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Administrativa - PUC Minas</title>
+    <link rel="stylesheet" th:href="@{/css/admin.css}">
+</head>
+
+<body>
+
+<div class="admin-container">
+    <div class="admin-content">
+        <img th:src="@{/images/escudo.png}" alt="Escudo" class="admin-shield">
+
+        <h4 class="admin-title">Área Administrativa</h4>
+
+        <p class="admin-message">
+            Bem-vindo à área administrativa!
+        </p>
+
+        <p class="admin-description">
+            Usuário: <strong th:text="${usuario}"></strong>
+        </p>
+
+        <p class="admin-description">
+            Você está acessando uma área restrita do sistema.
+        </p>
+
+        <form th:action="@{/logout}" method="post" class="admin-form">
+            <div class="admin-button-container">
+                <button type="submit">Sair</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

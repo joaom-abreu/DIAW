@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - PUC Minas</title>
+    <link rel="stylesheet" th:href="@{/css/home.css}">
+</head>
+
+<body>
+
+<div class="home-container">
+    <div class="home-content">
+        <img th:src="@{/images/escudo.png}" alt="Escudo" class="home-shield">
+
+        <h4 class="home-title">Bem-vindo!</h4>
+
+        <p class="home-message">
+            Login realizado com sucesso.
+        </p>
+
+        <p class="home-description">
+            Usuário: <strong th:text="${usuario}"></strong>
+        </p>
+
+        <p class="home-description">
+            Você está autenticado no sistema.
+        </p>
+
+        <form th:action="@{/logout}" method="post" class="home-form">
+            <div class="home-button-container">
+                <button type="submit">Sair</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro de Login - PUC Minas</title>
+    <link rel="stylesheet" th:href="@{/css/error.css}">
+</head>
+
+<body>
+
+<div class="error-container">
+    <div class="error-form">
+        <form th:action="@{/login}" method="post" class="error-form-content">
+            <img th:src="@{/images/escudo.png}" alt="Escudo" class="error-shield">
+
+            <h4 class="error-title">Login</h4>
+
+            <input type="text" id="username" name="username" placeholder="Username" required>
+
+            <input type="password" id="password" name="password" placeholder="Senha" required>
+
+            <div class="error-button-container">
+                <button type="submit">Entrar</button>
+            </div>
+
+            <div class="error-message">
+                <strong>Falha ao efetuar o login!</strong>
+                <span>Verifique seu usuário e senha e tente novamente.</span>
+            </div>
+
+            <p class="error-redirect-options">
+                Ainda não tem cadastro? <br>
+                <a th:href="@{/register}">Cadastre-se</a> |
+                <a th:href="@{/recoverpassword}">Esqueceu sua senha?</a>
+            </p>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
